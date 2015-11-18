@@ -1,0 +1,16 @@
+{
+  "name": "number-words",
+  "version": "1.0.0-alpha.1",
+  "description": "",
+  "license": "MIT",
+  "repository": "andreruffert/number-words",
+  "author": "André Ruffert",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "tape test.js | tap-spec"
+  },
+  "devDependencies": {
+    "tap-spec": "^4.1.0",
+    "tape": "^4.2.2"
+  }
+}
