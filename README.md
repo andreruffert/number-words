@@ -1,3 +1,3 @@
 # number-words [WIP]
 
-> Convert numbers into words
+> Convert a number into words
