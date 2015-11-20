@@ -1,17 +1,33 @@
 {
   "name": "number-words",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.1-alpha.2",
   "description": "Convert a number into words",
   "license": "MIT",
   "repository": "andreruffert/number-words",
   "author": "André Ruffert",
-  "main": "src/index.js",
+  "main": "dist/number-words.js",
   "scripts": {
-    "test": "xo && tape test.js | tap-spec"
+    "test": "xo && tape test.js | tap-spec",
+    "browserify": "browserify src/index.js > dist/$npm_package_name.js --standalone $npm_package_name",
+    "uglify": "uglifyjs dist/$npm_package_name.js -o dist/$npm_package_name.min.js",
+    "build:js": "npm-run-all browserify uglify",
+    "build": "mkdirp dist && npm-run-all build:*"
   },
   "babel": {
     "presets": [
       "es2015"
+    ]
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
     ]
   },
   "xo": {
@@ -33,6 +49,9 @@
   "devDependencies": {
     "babel-core": "^6.2.1",
     "babel-preset-es2015": "^6.1.18",
+    "babelify": "^7.2.0",
+    "browserify": "^12.0.1",
+    "mkdirp": "^0.5.1",
     "tap-spec": "^4.1.0",
     "tape": "^4.2.2",
     "xo": "^0.11.2"
