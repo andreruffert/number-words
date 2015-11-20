@@ -7,4 +7,4 @@ const getReverseNumberParts = (number) => {
   return parts;
 };
 
-module.exports = getReverseNumberParts;
+export default getReverseNumberParts;

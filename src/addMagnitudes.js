@@ -6,8 +6,6 @@ const magnitudes = [
   'quadrillion'
 ];
 
-const addMagnitudes = (str, index) => {
-  return (str && index) ? `${str} ${magnitudes[index - 1]}` : (str) ? str : '';
-};
+const addMagnitudes = (str, index) => (str && index) ? `${str} ${magnitudes[index - 1]}` : str;
 
-module.exports = addMagnitudes;
+export default addMagnitudes;

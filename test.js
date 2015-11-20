@@ -1,3 +1,5 @@
+require('babel-core/register');
+
 const test = require('tape');
 const numberWords = require('./src');
 

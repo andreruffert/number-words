@@ -51,4 +51,4 @@ const toWords = (number) => {
   return result.join(' ');
 };
 
-module.exports = toWords;
+export default toWords;
