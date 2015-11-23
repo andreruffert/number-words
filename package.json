@@ -5,13 +5,14 @@
   "license": "MIT",
   "repository": "andreruffert/number-words",
   "author": "André Ruffert",
-  "main": "dist/number-words.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "xo && tape test.js | tap-spec",
     "browserify": "browserify src/index.js > dist/$npm_package_name.js --standalone $npm_package_name",
     "uglify": "uglifyjs dist/$npm_package_name.js -o dist/$npm_package_name.min.js",
     "build:js": "npm-run-all browserify uglify",
-    "build": "mkdirp dist && npm-run-all build:*"
+    "build": "mkdirp dist && npm-run-all build:*",
+    "prepublish": "babel src --out-dir lib"
   },
   "babel": {
     "presets": [
@@ -47,6 +48,7 @@
     }
   },
   "devDependencies": {
+    "babel-cli": "^6.2.0",
     "babel-core": "^6.2.1",
     "babel-preset-es2015": "^6.1.18",
     "babelify": "^7.2.0",
