@@ -38,6 +38,9 @@
     ],
     "space": true,
     "esnext": true,
+    "ignores": [
+      "lib/**"
+    ],
     "rules": {
       "brace-style": [
         2,
