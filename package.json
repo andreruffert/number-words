@@ -6,6 +6,11 @@
   "repository": "andreruffert/number-words",
   "author": "André Ruffert",
   "main": "lib/index.js",
+  "files": [
+    "dist",
+    "lib",
+    "src"
+  ],
   "scripts": {
     "test": "xo && tape test.js | tap-spec",
     "browserify": "browserify src/index.js > dist/$npm_package_name.js --standalone $npm_package_name",
