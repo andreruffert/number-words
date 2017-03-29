@@ -1,6 +1,6 @@
 {
   "name": "number-words",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Convert a number into words",
   "license": "MIT",
   "repository": "andreruffert/number-words",
