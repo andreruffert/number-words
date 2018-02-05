@@ -40,7 +40,7 @@ test('1 - 19', t => {
 test('20 - 99', t => {
   const cases = {
     21: 'twenty one',
-    42: 'fourty two',
+    42: 'forty two',
     99: 'ninety nine'
   };
 
