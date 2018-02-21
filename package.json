@@ -17,7 +17,7 @@
     "uglify": "uglifyjs dist/$npm_package_name.js -o dist/$npm_package_name.min.js",
     "build:js": "npm-run-all browserify uglify",
     "build": "mkdirp dist && npm-run-all build:*",
-    "prepublishOnly": "babel src --out-dir lib"
+    "prepublishOnly": "npm run build && babel src --out-dir lib"
   },
   "babel": {
     "presets": [
