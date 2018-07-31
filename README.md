@@ -20,13 +20,16 @@ numberWords.convert(42);
 
 numberWords.convert(101);
 //=> 'one hundred and one'
+
+numberWords.convert(31.41);
+//=> 'thirty one'
 ```
 
 ## API
 
 ### numberWords.convert(number)
 
-#### number 
+#### number
 
 Type `number`
 
