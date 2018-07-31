@@ -99,3 +99,19 @@ test('999 - ...', t => {
 
   t.end();
 });
+
+test('decimals', t => {
+  const cases = {
+    42.41: 'forty two',
+    132.79: 'one hundred and thirty two'
+  };
+
+  t.plan(Object.keys(cases).length);
+
+  Object.keys(cases).forEach((number) => {
+    const expectedString = cases[number];
+    t.is(numberWords.convert(number), expectedString, `numberWords.convert(${number}) should return "${expectedString}"`);
+  });
+
+  t.end();
+});

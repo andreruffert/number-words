@@ -1,8 +1,10 @@
-const getReverseNumberParts = (number) => {
+const getReverseNumberParts = number => {
   const parts = [];
-  while (number > 0) {
-    parts.push(number % 1000);
-    number = Math.floor(number / 1000);
+  let int = Math.trunc(number);
+
+  while (int > 0) {
+    parts.push(int % 1000);
+    int = Math.floor(int / 1000);
   }
   return parts;
 };
