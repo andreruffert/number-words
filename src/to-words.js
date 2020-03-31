@@ -28,7 +28,7 @@ const words = {
   90: 'ninety'
 };
 
-const toWords = (number) => {
+const toWords = number => {
   const result = [];
   if (number < 20) {
     if (number) {
@@ -48,6 +48,7 @@ const toWords = (number) => {
       result.push(`and ${toWords(number % 100)}`);
     }
   }
+
   return result.join(' ');
 };
 

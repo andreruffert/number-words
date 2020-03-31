@@ -46,7 +46,7 @@ test('20 - 99', t => {
 
   t.plan(Object.keys(cases).length);
 
-  Object.keys(cases).forEach((number) => {
+  Object.keys(cases).forEach(number => {
     const expectedString = cases[number];
     t.is(numberWords.convert(number), expectedString, `numberWords.convert(${number}) should return "${expectedString}"`);
   });
@@ -65,7 +65,7 @@ test('100 - 999', t => {
 
   t.plan(Object.keys(cases).length);
 
-  Object.keys(cases).forEach((number) => {
+  Object.keys(cases).forEach(number => {
     const expectedString = cases[number];
     t.is(numberWords.convert(number), expectedString, `numberWords.convert(${number}) should return "${expectedString}"`);
   });
@@ -73,7 +73,7 @@ test('100 - 999', t => {
   t.end();
 });
 
-test('999 - ...', t => {
+test('999 -  …', t => {
   const cases = {
     1000: 'one thousand',
     2000: 'two thousand',
@@ -92,7 +92,7 @@ test('999 - ...', t => {
 
   t.plan(Object.keys(cases).length);
 
-  Object.keys(cases).forEach((number) => {
+  Object.keys(cases).forEach(number => {
     const expectedString = cases[number];
     t.is(numberWords.convert(number), expectedString, `numberWords.convert(${number}) should return "${expectedString}"`);
   });
@@ -108,7 +108,7 @@ test('decimals', t => {
 
   t.plan(Object.keys(cases).length);
 
-  Object.keys(cases).forEach((number) => {
+  Object.keys(cases).forEach(number => {
     const expectedString = cases[number];
     t.is(numberWords.convert(number), expectedString, `numberWords.convert(${number}) should return "${expectedString}"`);
   });
