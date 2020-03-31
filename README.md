@@ -1,6 +1,7 @@
 # number-words
 
-[![Build Status](https://travis-ci.org/andreruffert/number-words.svg?branch=master)](https://travis-ci.org/andreruffert/number-words) [![npm version](https://img.shields.io/npm/v/number-words.svg)](https://www.npmjs.com/package/number-words)
+[![CI Status](https://github.com/andreruffert/number-words/workflows/CI/badge.svg)](https://github.com/andreruffert/number-words/actions?query=workflow%3ACI) 
+[![npm version](https://img.shields.io/npm/v/number-words.svg)](https://www.npmjs.com/package/number-words)
 
 > Convert a number into words
 
