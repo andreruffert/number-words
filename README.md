@@ -2,6 +2,7 @@
 
 [![CI Status](https://github.com/andreruffert/number-words/workflows/CI/badge.svg)](https://github.com/andreruffert/number-words/actions?query=workflow%3ACI) 
 [![npm version](https://img.shields.io/npm/v/number-words.svg)](https://www.npmjs.com/package/number-words)
+[![npm](https://img.shields.io/npm/dm/number-words?logo=npm)](https://www.npmjs.com/package/number-words)
 
 > Convert a number into words
 
